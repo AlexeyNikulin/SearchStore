@@ -1,0 +1,30 @@
+.search-panel {
+    position: relative;
+    height: 52px;
+    width: 100%;
+    svg {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__input {
+        height: 100%;
+        width: 100%;
+        padding-left: 44px;
+        border: 1px solid rgba(51, 51, 51, 0.2);
+        border-radius: 50px;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__input::placeholder {
+        font-family: $famyli-open-sans;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.45);
+    }
+}

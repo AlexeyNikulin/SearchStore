@@ -1,0 +1,56 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    // overflow: hidden;
+    padding-top: 41px;
+    background-color: #F3F4F9;
+    &__logo {
+        overflow: hidden;
+        padding-left: 41px;
+    }
+    &__ham {
+        position: absolute;
+        display: none;
+        left: calc(100% - 1px);
+        top: 0;
+    }
+}
+
+.menu-items {
+    margin-top: 62px;
+    overflow: hidden;
+    &__svg {
+        height: 24px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        span {
+            font-family: $famyli-open-sans;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            margin-left: 14px;
+        }
+        svg {
+            path {
+                stroke: black;
+            }
+        }
+        &_active {
+            color: #34ABE0;
+            border-left: 3px solid #34ABE0;
+            svg {
+                path {
+                    stroke: #34ABE0;
+                }
+            }
+        }
+    }
+}

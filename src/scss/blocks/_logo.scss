@@ -1,0 +1,19 @@
+.logo {
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &__img {
+        width: 50px;
+        cursor: pointer;
+    }
+
+    &__name {
+        margin-left: 10px;
+        font-family: $famyli-poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
